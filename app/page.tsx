@@ -1,11 +1,34 @@
+'use client';
+
+import { Grid, Center, Title } from '@mantine/core';
+import { Carousel } from '@mantine/carousel'
+import { CarouselCard } from '@/components/CarouselCard/CarouselCard';
 import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { DirectionAwareHover } from '@/components/DirectionAwareHover/DirectionAwareHover';
+import { ArticleCard } from '@/components/ArticleCard/ArticleCard';
 
 export default function HomePage() {
   return (
     <>
       <Welcome />
-      <ColorSchemeToggle />
+
+      <Title>
+        Our Services:
+      </Title>
+
+      <Center>
+      <Grid>
+        <Grid.Col span={4}>
+          <ArticleCard />
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <ArticleCard />
+        </Grid.Col>
+        <Grid.Col span={4}>
+          <ArticleCard />
+        </Grid.Col>
+      </Grid>
+      </Center>
     </>
   );
 }

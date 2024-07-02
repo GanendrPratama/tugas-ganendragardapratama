@@ -1,22 +1,23 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text } from '@mantine/core';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
   return (
     <>
       <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+      <Text inherit variant='gradient' component='span' gradient={{ from: 'purple', to: 'pink' }}>
+          Beauty
         </Text>
+        {' '}
+        and{' '}
+        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+          Elegance
+        </Text>
+        {' '}
+        Redefined
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit page.tsx file.
+      SEA Salon offers haircuts, styling, manicures, pedicures, and rejuvenating facials. Discover beauty and elegance redefined with us! 😊
       </Text>
     </>
   );

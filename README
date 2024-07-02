@@ -1,0 +1,5 @@
+run
+npm run dev
+./pocketbase serve
+
+on two different terminals
